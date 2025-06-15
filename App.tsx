@@ -90,6 +90,7 @@ export default function App() {
           search,
         },
       });
+      console.log('Fetched consumers:', response.data.consumers);
       setConsumers(response.data.consumers);
       setTotalPages(Math.ceil(response.data.total / itemsPerPage));
       setCurrentPage(page);
